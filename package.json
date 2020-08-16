@@ -51,6 +51,7 @@
     "imagemin-svgo": "^7.1.0",
     "normalize.css": "^8.0.1",
     "normalize.less": "^1.0.0",
-    "svgstore": "^3.0.0-2"
+    "svgstore": "^3.0.0-2",
+    "swiper": "^6.1.1"
   }
 }
