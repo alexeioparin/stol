@@ -1,8 +1,7 @@
 .main-footer {
   background-color: #1f1f1f;
   color: #fff;
-  width: calc(100% - 100px);
-  padding: 40px 50px;
+  padding: 40px 0;
 
   p {
     font-size: 40px;
@@ -25,5 +24,46 @@
     color: #777;
     font-size: 30px;
     margin: 0;
+  }
+}
+
+@media (min-width: @mid-size) {
+  .main-footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 0 20px;
+
+    p {
+      font-size: 18px;
+    }
+  }
+
+  .main-footer__wrapper {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 65px;
+    box-sizing: border-box;
+  }
+
+  .main-footer__logo {
+      margin-bottom: 0;
+
+      img {
+        width: 45px;
+      }
+    }
+
+  .main-footer__slogan {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    strong {
+      font-size: 24px;
+    }
+
+    p {
+      font-size: 16px;
+    }
   }
 }

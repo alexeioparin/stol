@@ -1,7 +1,10 @@
 .addition {
   background-color: #282828;
-  width: calc(100% - 90px);
-  padding: 50px 45px 40px;
+  padding: 50px 0 40px;
+}
+
+.addition__sublist {
+  display: none;
 }
 
 .addition__list {
@@ -27,5 +30,51 @@
     color: #fff;
     background-color: inherit;
     font-size: 30px;
+  }
+}
+
+@media (min-width: @mid-size) {
+  .addition__wrapper {
+    padding: 0 65px;
+    box-sizing: border-box;
+  }
+
+  .addition__list  {
+    display: flex;
+    justify-content: space-between;
+
+    li {
+      display: block;
+      min-height: 20px;
+      text-align: left;
+
+      &:not(:last-child) {
+        border-bottom: none;
+      }
+    }
+
+    li:last-child, button {
+      display: none;
+    }
+
+    span {
+      display: inline-block;
+      font-size: 24px;
+      color: #787878;
+      margin-bottom: 30px;
+    }
+  }
+
+  .addition__sublist {
+    display: block;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: left;
+
+    li {
+      font-size: 16px;
+      color: #fff;
+    }
   }
 }

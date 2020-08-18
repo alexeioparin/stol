@@ -2,6 +2,10 @@
   background-color: #f3f2f2;
 }
 
+.index-main__wrapper {
+  display: block;
+}
+
 .index-main__top-mobile {
   display: flex;
   justify-content: space-between;
@@ -25,6 +29,15 @@
 }
 
 @media(min-width: @mid-size) {
+  .index-main__wrapper-top {
+    background-color: #fff;
+    width: 100%;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    padding: 0 9.5%;
+    box-sizing: border-box;
+  }
+
   .index-main__top-mobile {
     display: none;
   }
@@ -38,10 +51,25 @@
     padding: 0;
     min-height: 100px;
 
+    li {
+      min-width: 90px;
+      text-align: left;
+    }
+
     a {
+      display: inline-block;
       text-decoration: none;
       color: #343434;
       font-weight: normal;
+      text-align: center;
     }
+  }
+
+  .index-main__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 81%;
+    margin: auto;
   }
 }
