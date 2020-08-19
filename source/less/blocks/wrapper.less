@@ -1,10 +1,12 @@
 .wrapper {
-  width: calc(100% - 60px);
+  width: 100%;
   padding: 0 30px;
+  margin: auto;
   overflow: hidden;
   position: relative;
   max-width: 1920px;
   text-align: center;
+  box-sizing: border-box;
 }
 
 @media (min-width: @mid-size) {
@@ -12,5 +14,7 @@
     width: 81%;
     margin: 0 auto;
     padding: 0;
+    overflow: visible;
+    z-index: 2;
   }
 }
