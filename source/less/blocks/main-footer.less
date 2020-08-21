@@ -9,10 +9,15 @@
   }
 }
 
+.main-footer__wrapper {
+  padding: 0 50px;
+  text-align: left;
+}
+
 .main-footer__logo {
   display: flex;
   align-items: center;
-  margin-bottom: 35px;
+  margin-bottom: 30px;
 }
 
 .main-footer__slogan {
@@ -41,15 +46,19 @@
   .main-footer__wrapper {
     display: flex;
     justify-content: space-between;
-    padding: 0 65px;
+    padding: 0 75px;
     box-sizing: border-box;
+
+    >p {
+      margin-right: 10px;
+    }
   }
 
   .main-footer__logo {
       margin-bottom: 0;
 
       img {
-        width: 45px;
+        width: 40px;
       }
     }
 
@@ -57,6 +66,8 @@
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    margin-left: 15px;
+    padding-top: 5px;
 
     strong {
       font-size: 24px;

@@ -10,7 +10,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  min-height: 100px;
+  min-height: 80px;
   background-color: #f1f1f1;
   border-bottom: 2px solid #e5e5e5;
   width: calc(100% - 60px);
@@ -43,6 +43,7 @@
   }
 
   .index-main__top-pc {
+    position: relative;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -50,11 +51,20 @@
     margin: 0;
     padding: 0;
     min-height: 100px;
+    z-index: 3;
 
-    li {
+
+    >li {
       min-width: 50px;
-      min-height: 80px;
+      min-height: 100px;
       text-align: left;
+      padding: 10px 0;
+      box-sizing: border-box;
+    }
+
+    >li:nth-child(8) {
+      margin-left: 20px;
+      margin-right: 20px;
     }
 
     img {
@@ -76,17 +86,186 @@
 
   .index-main__wrapper {
     display: flex;
-    justify-content: space-between;
     align-items: center;
     width: 81%;
     margin: auto;
+  }
+
+  .index-main__temp {
+    margin-right: 10px;
+  }
+
+  .index-main__cold-list,
+  .index-main__temp-list {
+    position: absolute;
+    display: flex;
+    width: 1400px;
+    bottom: -610px;
+    left: -140px;
+    min-height: 610px;
+
+
+    &::after {
+      content: "";
+      width: 100%;
+      height: 20px;
+      box-shadow: 0px 9px 18px -12px #000 inset;
+      position: absolute;
+    }
+
+    ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    a:hover {
+      color: #ffaf2d;
+    }
+  }
+
+  .index-main__temp-list {
+    bottom: -700px;
+    box-shadow: 0px 9px 18px -12px #000 inset;
+
+  }
+
+  .index-main__cold-types,
+  .index-main__temp-types {
+    width: 400px;
+    background-color: #fff;
+    padding-top: 30px;
+
+    ul {
+      width: 100%;
+    }
+
+    li {
+      display: flex;
+      align-items: center;
+      min-height: 40px;
+      padding-left: 90px;
+      padding-right: 15px;
+      color: #b7b7b7;
+
+      &:not(:last-child) {
+        border-bottom: 1px solid #f3f3f3;
+      }
+
+      span {
+        color: #303030;
+      }
+    }
+
+    a {
+      font-size: 18px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-grow: 1;
+
+      &:hover {
+        color: #a7e2a7;
+
+        span {
+          color: #ffaf2d;
+        }
+      }
+    }
+  }
+
+  .index-main__refrigerators,
+  .index-main__cold-brands,
+  .index-main__cooking {
+    background-color: #f7f7f7;
+    width: 280px;
+    border-left: 1px solid #f2f2f2;
+    box-sizing: border-box;
+
+    li {
+      min-height: 30px;
+      display: flex;
+      align-items: center;
+    }
+
+    a {
+      font-size: 18px;
+      display: flex;
+      align-items: center;
+    }
+  }
+
+  .index-main__refrigerators,
+  .index-main__cooking {
+    div {
+      padding: 30px;
+      padding-top: 30px;
+    }
+
+    div:first-child {
+      min-height: 250px;
+      border-bottom: 1px solid #f2f2f2;
+      box-sizing: border-box;
+    }
+
+    img {
+      width: 20px;
+      margin-right: 10px;
+    }
+  }
+
+  .index-main__cold-brands {
+    padding: 30px;
+  }
+
+  .index-main__cold-img,
+  .index-main__temp-img {
+    background-color: #ffaf2d;
+    text-align: center;
+    width: 440px;
+    padding-top: 35px;
+
+    img {
+      margin-bottom: 30px;
+    }
+
+    p {
+      font-size: 24px;
+      color: #fff;
+      margin: 0;
+      margin-bottom: 20px;
+    }
+
+    a {
+      font-size: 18px;
+      color: #fff;
+      display: inline-block;
+      background-color: #000;
+      border-radius: 4px;
+      width: 130px;
+      height: 30px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 0 auto;
+    }
+  }
+
+  .index-main__temp-img {
+    background-color: #00a94b;
+    padding-top: 55px;
+  }
+
+  .index-main__tt {
+    text-transform: uppercase;
   }
 }
 
 @media (min-width: 1300px) {
   .index-main__top-pc {
-    li {
+    >li {
       min-width: 90px;
+      height: 100%;
     }
 
     a {
@@ -95,13 +274,55 @@
     }
 
     img {
-      width: 65px;
+      width: 55px;
     }
+  }
+
+  .index-main__cold-types a {
+    max-width: 300px;
   }
 }
 
 @media (min-width: 1500px) {
+
   .index-main__top-pc a {
     font-size: 16px;
+  }
+
+  .index-main__cold-types a {
+    font-size: 18px;
+  }
+
+  .index-main__refrigerators,
+  .index-main__cooking {
+    a {
+      font-size: 18px;
+    }
+
+    img {
+      width: 20px;
+      heigt: 20px;
+    }
+  }
+
+  .index-main__cold-brands a {
+    font-size: 24px;
+  }
+
+  .index-main__cold-img,
+  .index-main__temp-img {
+    img {
+      width: 200px;
+      height: 410px;
+    }
+
+    a {
+      font-size: 18px;
+    }
+  }
+
+  .index-main__temp-img img {
+    width: 307px;
+    height: 378px;
   }
 }

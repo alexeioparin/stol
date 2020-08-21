@@ -18,22 +18,11 @@
   text-align: left;
 }
 
-.about__slogan {
-  font-size: 50px;
-  margin-bottom: 60px;
-
-  p {
-    margin: 0;
-    font-size: 25px;
-    color: #777;
-  }
-}
-
 .about__description {
-  margin: 0 60px 140px;
+  margin: 0 55px 130px;
 
   img {
-    margin-bottom: 60px;
+    margin-bottom: 48px;
   }
 
   strong {
@@ -45,6 +34,23 @@
   p:not(:first-of-type) {
     font-size: 30px;
     margin: 0;
+    margin-bottom: 2px;
+  }
+}
+
+.about__slogan {
+  font-size: 50px;
+  margin-bottom: 55px;
+
+  strong {
+    font-size: 50px;
+    line-height: 50px;
+  }
+
+  p {
+    margin: 0;
+    font-size: 25px;
+    color: #777;
   }
 }
 
@@ -52,7 +58,8 @@
   font-size: 30px;
   color: #777;
   margin: 0;
-  margin-bottom: 45px;
+  margin-top: 5px;
+  margin-bottom: 35px;
 }
 
 .about__offer {
@@ -65,11 +72,13 @@
   strong {
     display: inline-block;
     font-size: 50px;
-    margin-bottom: 60px;
+    line-height: 60px;
+    margin-bottom: 52px;
   }
 
   p {
     font-size: 30px;
+    line-height: 36px;
     margin: 0;
   }
 }
@@ -79,12 +88,17 @@
 }
 
 @media(min-width: 767px) {
-  .about button {
-    margin-right: auto;
-    margin-top: 40px;
-    width: 50px;
-    height: 50px;
-    font-size: 24px;
+  .about {
+    padding-top: 128px;
+    padding-bottom: 170px;
+
+    button {
+      margin-right: auto;
+      margin-top: 40px;
+      width: 50px;
+      height: 50px;
+      font-size: 24px;
+    }
   }
 
   .about__wrapper {
@@ -92,7 +106,7 @@
     justify-content: space-between;
     flex-direction: row-reverse;
     flex-wrap: wrap;
-    padding: 0 65px;
+    padding: 0 75px;
     box-sizing: border-box;
     text-align: left;
   }
@@ -100,10 +114,13 @@
   .about__description {
     width: 28%;
     margin: 0;
+    padding-left: 80px;
+    padding-top: 60px;
+    box-sizing: border-box;
 
     img {
       width: 150px;
-      margin-bottom: 30px;
+      margin-bottom: 23px;
     }
 
     strong {
@@ -117,11 +134,13 @@
 
   .about__offer-block {
     width: 70%;
-    padding-right: 110px;
+    padding-right: 107px;
+    padding-left: 3px;
     box-sizing: border-box;
 
     strong {
       font-size: 40px;
+      line-height: 47px;
       margin-bottom: 20px;
       padding-right: 30px;
     }
@@ -133,14 +152,28 @@
 
   .about__offer {
     margin-bottom: 25px;
+    padding-right: 45px;
+
+    strong {
+      padding-right: 50px;
+    }
 
     span {
       display: none;
+    }
+
+    p {
+      line-height: 22px;
     }
   }
 
   .about__slogan {
     margin-bottom: 30px;
+
+    strong {
+      font-size: 40px;
+      line-height: 40px;
+    }
 
     p {
       font-size: 16px;
@@ -149,10 +182,13 @@
 
   .about__stats {
     font-size: 18px;
+    margin-bottom: 22px;
+    margin-top: 2px;
   }
 
   .about__list {
     display: block;
+    padding-right: 10px;
 
     ul {
       list-style: none;
@@ -162,6 +198,15 @@
 
     li {
       font-size: 18px;
+      line-height: 22px;
     }
+
+    strong {
+      margin-bottom: 17px;
+    }
+  }
+
+  .about__mobile {
+    display: none;
   }
 }

@@ -51,14 +51,14 @@
                 </li>
                 <li class="main-header__list-item">
                   <a href="#" class="main-header__mail-link">
-                    <img src="img/email.svg" width="20" height="13">
+                    <img src="img/email.svg" width="20" height="13" alt="почта">
                     <span>info@stolovay.ru</span>
                     <a href="#" class="visually-hidden main-header__mail-copy">Скопировать</a>
                   </a>
                 </li>
                 <li class="main-header__list-item main-header__list-item--phone">
                   <a href="tel:+74957907205">
-                    <img src="img/telephone-handle-silhouette.svg" width="16" height="20">
+                    <img src="img/telephone-handle-silhouette.svg" width="16" height="20" alt="телефон">
                     <span>8 495 790-72-05</span>
                   </a>
                   <div class="main-header__phone-menu visually-hidden">
@@ -69,16 +69,16 @@
                       <ul class="main-header__social-list">
                         <li>Выберите способ связи:</li>
                         <li>
-                          <a href="#"><img src="img/telephone-handle-silhouette.svg" width="17" height="23" alt=""><span>Мобильный</span></a>
+                          <a href="#"><img src="img/telephone-handle-silhouette.svg" width="17" height="23" alt="Телефон"><span>Мобильный</span></a>
                         </li>
                         <li>
-                          <a href="#"><img src="img/viber.png" alt=""><span>Viber</span></a>
+                          <a href="#"><img src="img/viber.png" alt="Вайбер"><span>Viber</span></a>
                         </li>
                         <li>
-                          <a href="#"><img src="img/telegram.png" alt=""><span>Telegram</span></a>
+                          <a href="#"><img src="img/telegram.png" alt="Телеграм"><span>Telegram</span></a>
                         </li>
                         <li>
-                          <a href="#"><img src="img/whatsapp.png" alt=""><span>Whatsapp</span></a>
+                          <a href="#"><img src="img/whatsapp.png" alt="Ватсапп"><span>Whatsapp</span></a>
                         </li>
                       </ul>
                     </div>
@@ -106,16 +106,18 @@
             <img src="img/menu.png" alt="Меню сайта">
           </button>
           <div class="main-header__logo">
-            <img src="img/logo.svg" alt="Логотип компании" width="52">
-            <picture>
-              <source media="(min-width: 767px)" srcset="img/Stol_ru.png">
-              <img src="img/logo_text.png" alt="Название компании">
-            </picture>
+            <a href="#">
+              <img src="img/logo.svg" alt="Логотип компании" width="57">
+              <picture>
+                <source media="(min-width: 767px)" srcset="img/Stol_ru.png">
+                <img src="img/logo_text.png" alt="Название компании">
+              </picture>
+            </a>
           </div>
         </div>
         <form class="main-header__form" action="index.html" method="get">
-          <ul class="main-header__types">
-            <li>Всё<img src="img/rect_select.png"></li>
+          <div class=""><span>Всё</span><img src="img/rect_select.png"></div>
+          <ul class="main-header__types visually-hidden">
             <li>Выберите категорию:</li>
             <li>Тепловое</li>
             <li>Холодильное</li>
@@ -136,19 +138,19 @@
         </form>
         <div class="main-header__right-side">
           <a href="#" class="main-header__portal">
-            <img src="img/portalpostavschikov_active.png" alt="">
+            <img src="img/portalpostavschikov_active.png" alt="Иконка портала">
             <div class="">Мы на портале поставщиков</div>
           </a>
           <a href="#" class="main-header__search">
-            <img src="img/search.png" alt="Поиск" width="50" height="57">
+            <img src="img/search.png" alt="Поиск" width="50" height="57" alt="Поиск">
           </a>
           <a href="#" class="main-header__phone">
-            <img src="img/telephone.svg" alt="Телефон" width="56" height="56">
+            <img src="img/telephone.svg" alt="Телефон" width="56" height="60" alt="Телефон">
           </a>
           <a href="#" class="main-header__shopping-cart">
             <div class="main-header__shopping-cart-left-block">
               <div>12</div>
-              <img src="img/shopping-cart.svg" alt="Корзина" width="54" height="48">
+              <img src="img/shopping-cart.svg" alt="Корзина" width="54" height="48" alt="Корзина">
             </div>
             <div class="main-header__shopping-cart-right-block">
               <p>Сумма</p>
@@ -165,69 +167,183 @@
           <a href="#">></a>
         </div>
         <ul class="index-main__top-pc">
-          <li>
+          <li class="index-main__temp">
             <a href="#">
-              <img src="img/icon-temp.png" alt="">
+              <img src="img/icon-temp.png" alt="" width="55" height="55">
               <div class="">Тепловое</div>
             </a>
+            <div class="index-main__temp-list visually-hidden">
+              <div class="index-main__temp-types">
+                <ul>
+                  <li><a href="#"><span>Пароконвектоматы</span>></a></li>
+                  <li><a href="#"><span>Конвекционные печи</span>></a></li>
+                  <li><a href="#"><span>Плиты</span>></a></li>
+                  <li><a href="#"><span>Электросковороды</span>></a></li>
+                  <li><a href="#"><span>Шкафы жарочные</span>></a></li>
+                  <li><a href="#"><span>Котлы</span>></a></li>
+                  <li><a href="#"><span>Фритюрницы</span>></a></li>
+                  <li><a href="#"><span>Жарочные поверхности</span>></a></li>
+                  <li><a href="#"><span>Кипятильники</span>></a></li>
+                  <li><a href="#"><span>Водонагреватели</span>></a></li>
+                  <li><a href="#"><span>Столы тепловые</span>></a></li>
+                  <li><a href="#"><span>Мармиты</span>></a></li>
+                  <li><a href="#"><span>Тостеры</span>></a></li>
+                  <li><a href="#"><span>Шкафы тепловые</span>></a></li>
+                </ul>
+              </div>
+              <div class="index-main__cooking">
+                <div class="">
+                  <ul>
+                    <li><a href="#">Бойлерные</a></li>
+                    <li><a href="#">Инжекторные</a></li>
+                    <li><a href="#">Все сразу</a></li>
+                  </ul>
+                </div>
+                <div class="">
+                  <ul>
+                    <li><a href="#">Бренды</a></li>
+                    <li><a href="#">Abat</a></li>
+                    <li><a href="#">Unox</a></li>
+                    <li><a href="#">Проммаш</a></li>
+                    <li><a href="#">Atesy</a></li>
+                    <li><a href="#">Rational</a></li>
+                  </ul>
+                </div>
+                <div class="">
+                  <ul>
+                    <li>Страны</li>
+                    <li><a href="#"><img src="img/spain.png" width="20" height="20" alt="Флаг Испании">Испания</a></li>
+                    <li><a href="#"><img src="img/swiss.png" width="20" height="20" alt="Флаг Швейцарии">Швейцария</a></li>
+                    <li><a href="#"><img src="img/germany.png" width="20" height="20" alt="Флаг Германии">Германия</a></li>
+                    <li><a href="#"><img src="img/turkey.png" width="20" height="20" alt="Флаг Турции">Турция</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="index-main__temp-img">
+                <img src="img/conv_rational.png" width="307" height="378" alt="Холодильник полаир">
+                <p>Холодильное оборудование</p>
+                <a href="#">Все сразу</a>
+              </div>
+            </div>
           </li>
-          <li>
+          <li class="index-main__cold">
             <a href="#">
-              <img src="img/icon-cold.png" alt="">
+              <img src="img/icon-cold.png" alt="" width="55" height="55" alt="Иконка холодильник">
               <div class="">Холодильное</div>
             </a>
+            <div class="index-main__cold-list visually-hidden">
+              <div class="index-main__cold-types">
+                <ul>
+                  <li><a href="#"><span>Холодильные шкафы</span>></a></li>
+                  <li><a href="#"><span>Камеры холодильные</span>></a></li>
+                  <li><a href="#"><span>Моноблоки</span>></a></li>
+                  <li><a href="#"><span>Сплит-системы</span>></a></li>
+                  <li><a href="#"><span>Столы холодильные</span>></a></li>
+                  <li><a href="#"><span>Витрины холодильные</span>></a></li>
+                  <li><a href="#"><span>Горки холодильные</span>></a></li>
+                  <li><a href="#"><span>Бонеты</span>></a></li>
+                  <li><a href="#"><span>Лари морозильные</span>></a></li>
+                  <li><a href="#"><span>Льдогенераторы</span>></a></li>
+                  <li><a href="#"><span>Шкафы шоковой заморозки</span>></a></li>
+                  <li><a href="#"><span>Кегераторы</span>></a></li>
+                </ul>
+              </div>
+              <div class="index-main__refrigerators">
+                <div class="">
+                  <ul>
+                    <li><a href="#">Среднетемпературные</a></li>
+                    <li><a href="#">Низкотемпературные</a></li>
+                    <li><a href="#">Универсальные</a></li>
+                    <li><a href="#">Комбинированные</a></li>
+                    <li><a href="#">Барные</a></li>
+                    <li><a href="#">Все сразу</a></li>
+                  </ul>
+                </div>
+                <div class="">
+                  <ul>
+                    <li>Страны</li>
+                    <li><a href="#"><img src="img/spain.png" width="20" height="20" alt="Флаг Испании">Испания</a></li>
+                    <li><a href="#"><img src="img/swiss.png" width="20" height="20" alt="Флаг Швейцарии">Швейцария</a></li>
+                    <li><a href="#"><img src="img/germany.png" width="20" height="20" alt="Флаг Германии">Германия</a></li>
+                    <li><a href="#"><img src="img/turkey.png" width="20" height="20" alt="Флаг Турции">Турция</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="index-main__cold-brands">
+                <ul>
+                  <li>Бренды</li>
+                  <li><a href="#" class="index-main__tt">Electrolux</a></li>
+                  <li><a href="#">Gastrorag</a></li>
+                  <li><a href="#" class="index-main__tt">Ариада</a></li>
+                  <li><a href="#">Abat</a></li>
+                  <li><a href="#" class="index-main__tt">Мxm</a></li>
+                  <li><a href="#" class="index-main__tt">Полюс</a></li>
+                  <li><a href="#">Hicold</a></li>
+                  <li><a href="#" class="index-main__tt">Polair</a></li>
+                  <li><a href="#">Премьер</a></li>
+                  <li><a href="#">Бирюса</a></li>
+                  <li><a href="#">Россия</a></li>
+                  <li><a href="#" class="index-main__tt">Tefcold</a></li>
+                </ul>
+              </div>
+              <div class="index-main__cold-img">
+                <img src="img/polair_hol.png" width="200" height="410" alt="Холодильник полаир">
+                <p>Холодильное оборудование</p>
+                <a href="#">Все сразу</a>
+              </div>
+            </div>
           </li>
           <li>
             <a href="#">
-              <img src="img/icon-mech.png" alt="">
+              <img src="img/icon-mech.png" alt="" width="55" height="55" alt="Иконка электромеханическое">
               <div class="">Электромеханическое</div>
             </a>
           </li>
           <li>
             <a href="#">
-              <img src="img/icon-pmm.png" alt="">
+              <img src="img/icon-pmm.png" alt="" width="55" height="55" alt="Иконка посудомоечное">
               <div class="">Посудомоечное</div>
             </a>
           </li>
           <li>
             <a href="#">
-              <img src="img/icon-bread.png" alt="">
+              <img src="img/icon-bread.png" alt="" width="55" height="55" alt="Иконка хлебопекарное">
               <div class="">Хлебопекарное</div>
             </a>
           </li>
           <li>
             <a href="#">
-              <img src="img/icon-line.png" alt="">
+              <img src="img/icon-line.png" alt="" width="55" height="55" alt="Иконка линии раздачи">
               <div class="">Линии раздачи</div>
             </a>
           </li>
           <li>
             <a href="#">
-              <img src="img/icon-neutral.png" alt="">
+              <img src="img/icon-neutral.png" alt="" width="55" height="55" alt="Иконка нейтральное оборудование">
               <div class="">Нейтральное</div>
             </a>
           </li>
           <li>
             <a href="#">
-              <img src="img/icon-fast-food.png" alt="">
+              <img src="img/icon-fast-food.png" alt="" width="55" height="55" alt="Иконка фаст-фуд">
               <div class="">Для фаст-фуда</div>
             </a>
           </li>
           <li>
             <a href="#">
-              <img src="img/icon-bar.png" alt="">
+              <img src="img/icon-bar.png" alt="" width="55" height="55">
               <div class="">Для залов</div>
             </a>
           </li>
           <li>
             <a href="#">
-              <img src="img/icon-misc.png" alt="">
+              <img src="img/icon-misc.png" alt="" width="55" height="55">
               <div class="">Вспомогательное</div>
             </a>
           </li>
           <li>
             <a href="#">
-              <img src="img/icon-shop.png" alt="">
+              <img src="img/icon-shop.png" alt="" width="55" height="55">
               <div class="">Для магазинов</div>
             </a>
           </li>
@@ -317,7 +433,7 @@
           </div>
         </section>
         <section class="sale-offer">
-          <img src="img/giftbox.svg" alt="Подарочная коробка" width="115" height="150">
+          <img src="img/giftbox.png" alt="Подарочная коробка" width="115" height="150">
           <p>Самые низкие цены</p>
           <strong>Распродажа</strong>
           <a href="#">Каталог распродаж ></a>
@@ -369,13 +485,21 @@
               <span>22.06.17</span>
             </div>
             <strong>Новый разборный ротационный пекарский шкаф РПШ-18-8-6МР</strong>
-            <p>Новый разборный ротационный пекарский шкаф РПШ-18-8-6МР:  в комплекте тележка-шпилька ТШГ-18 на 18 уровней 600х800 мм вместимость тележки-шпильки - 135 хлебных форм №7 инжекционный тип парообразования разборная конструкция увеличенное стекло двери. Память на 110 программ (до 4-ех этапов в каждой программе) USB-порт. Таймер до 10 ч Регулировка влажности от 0 до 100%.  5 скоро</p>
+            <ul>
+              <li>Новый разборный ротационный пекарский шкаф РПШ-18-8-6МР:  в комплекте тележка-шпилька ТШГ-18 на 18 уровней 600х800 мм</li>
+              <li>вместимость тележки-шпильки - 135 хлебных форм №7</li>
+              <li>инжекционный тип парообразования</li>
+              <li>разборная конструкция увеличенное стекло двери.</li>
+              <li>Память на 110 программ (до 4-ех этапов в каждой программе)</li>
+              <li>USB-порт. Таймер до 10 ч</li>
+              <li>Регулировка влажности от 0 до 100%.  5 скоро</li>
+            </ul>
           </div>
           <div class="news__right-column">
             <div class="news__small-block">
-              <img src="img/pmm.png" alt="">
+              <img src="img/pmm.png" alt="Изображение посудомоечной машины">
               <div class="news__text-block">
-                <div class="">
+                <div>
                   <span>Abat</span>
                   <span>22.06.17</span>
                 </div>
@@ -417,10 +541,15 @@
             <p class="equipment__description">для столовых, ресторанов и кафе ведущих производителей.</p>
           </div>
           <div class="equipment__convect">
-            <div class="equipment__text">
+            <div class="equipment__text equipment__text--mobile">
               <p class="equipment__name">Unox</p>
               <strong>Пароконвектоматы</strong>
               <p class="equipment__about">Благодаря своей универсальности пароконвектоматы быстро завоевывают пользователей по всему миру.</p>
+            </div>
+            <div class="equipment__text equipment__text--desktop">
+              <p class="equipment__name">Rational</p>
+              <strong>Пароконвектоматы</strong>
+              <p class="equipment__about">Педантичность и преданность своему делу делает продукцию Rational идеальной для тех, кто ищет надежность и долговечность.</p>
             </div>
             <picture>
               <source media="(min-width: 767px)" srcset="img/convectomat-big-full.png" height="480">
@@ -432,20 +561,20 @@
               <div class="equipment__text equipment__text--temp">
                 <p class="equipment__name equipment__name--temp">Abat</p>
                 <strong>Тепловое оборудование</strong>
-                <p class="equipment__about">Более 55 лет успешно работает на рынке  торгово- технологического оборудования, по праву занимая лидирующее положение в данном сегменте.</p>
+                <p class="equipment__about">Более 55 лет успешно работает на рынке  торгово-<span class="equipment__space">&nbsp;</span>технологического оборудования, по праву занимая лидирующее положение в данном сегменте.</p>
               </div>
               <img src="img/temp-conv.png" alt="Изображение конвектомата">
             </div>
             <div class="equipment__misc">
-              <div class="equipment__text">
+              <div class="equipment__text equipment__text--misc">
                 <p class="equipment__name">Hallde</p>
                 <strong>Овощерезки</strong>
                 <p class="equipment__about">Мощный двигатель переводит высокий крутящий момент на режущий инструмент</p>
               </div>
-              <img src="img/cold-table.png" alt="Изображение холодильного стола">
+              <img src="img/cold-table_mobile.png" alt="Изображение холодильного стола">
             </div>
             <div class="equipment__cold">
-              <div class="equipment__text">
+              <div class="equipment__text equipment__text--cold">
                 <p class="equipment__name">Hicold</p>
                 <strong>Холодильные столы</strong>
                 <p class="equipment__about">Многофункциональность оборудования позволяет оптимизировать пространство на кухне, сделать работу персонала максимально удобной и эффективной.</p>
@@ -473,7 +602,7 @@
             <div class="about__offer">
               <strong>Комплексные решения оснащения столовых и кафе</strong>
               <p>Компания <span>«Диалог»</span> предлагает комплексное оснащение столовых, ресторанов, кафе и баров в Москве. Наши услуги построены по принципу полного цикла обслуживания предприятий общепита и бизнеса HoReCa.</p>
-              <p>Иными словами, мы предлагаем проектирование «под ключ» и постгарантийное обслуживание. География работы компании охватывает всю страну. При этом в каждом регионе мы готовы География работы компании охватывает всю страну. При этом в каждом регионе мы готовы предложить демократичные цены на профессиональное технологическое оборудование для столовой и оптимальные решения с точки зрения эффективности бизнеса, приемлемым уровнем производительности в условиях ограниченного бюджета.</p>
+              <p>Иными словами, мы предлагаем проектирование «под ключ» и постгарантийное обслуживание. География работы компании охватывает всю страну. При этом в каждом регионе мы готовы <span class="about__mobile">География работы компании охватывает всю страну. При этом в каждом регионе мы готовы</span> предложить демократичные цены на профессиональное технологическое оборудование для столовой и оптимальные решения с точки зрения эффективности бизнеса, приемлемым уровнем производительности в условиях ограниченного бюджета.</p>
             </div>
             <div class="about__list">
               <strong>Что мы предлагаем</strong>
@@ -541,7 +670,7 @@
             <li>
               <span>Контакты</span>
               <button type="button" name="button">+</button>
-              <ul class="addition__sublist">
+              <ul class="addition__sublist addition__sublist--contacts">
                 <li>8 495 150-31-71</li>
                 <li>8 800 500 43 44</li>
                 <li>звонок беспланый</li>

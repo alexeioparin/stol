@@ -15,8 +15,6 @@
 .swiper-slide {
   text-align: center;
   font-size: 18px;
-
-  /* Center slide text vertically */
   display: -webkit-box;
   display: -ms-flexbox;
   display: -webkit-flex;
@@ -40,6 +38,9 @@
   text-align: left;
   color: #fff;
   padding: 0 30px;
+  padding-top: 20px;
+  width: 50%;
+  min-height: 385px;
 
   p {
     font-size: 25px;
@@ -47,14 +48,15 @@
 
     &:first-child {
       color: #777;
-      padding-top: 25px;
-      margin-bottom: 50px;
+      padding-top: 5px;
+      margin-bottom: 45px;
     }
   }
 
   strong {
     display: inline-block;
     font-size: 40px;
+    line-height: 42px;
     margin-bottom: 20px;
   }
 
@@ -70,8 +72,13 @@
     font-weight: normal;
     border-radius: 25px;
     background-color: #faad3d;
-    margin-top: 35px;
+    margin-top: 40px;
   }
+}
+
+.swiper-slide-image {
+  flex-grow: 1;
+  text-align: left;
 }
 
 .swiper-container-vertical > .swiper-wrapper {
@@ -179,8 +186,9 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  min-height: 100px;
+  min-height: 80px;
   padding: 0 30px;
+  padding-bottom: 10px;
 }
 .swiper-button-prev,
 .swiper-button-next {
@@ -579,29 +587,36 @@ button.swiper-pagination-bullet {
 
 @media (min-width: @mid-size) {
   .swiper-container {
-    width: 58%;
+    width: 58.2%;
     min-height: 475px;
     box-sizing: border-box;
+    padding-top: 0px;
   }
 
   .swiper-slide-unit {
+    min-height: 320px;
     padding: 0;
     padding-left: 7.7%;
-    width: 58.6%;
+    width: 47.2%;
 
     p {
-      font-size: 16px;
+      font-size: 18px;
 
       &:first-child {
         color: #777;
         padding-top: 0;
-        margin-bottom: 70px;
+        margin-bottom: 65px;
+        font-size: 16px;
       }
+    }
+
+    strong {
+      margin-bottom: 15px;
     }
 
     a {
       font-size: 18px;
-      margin-top: 70px;
+      margin-top: 67px;
       line-height: 35px;
       max-width: 125px;
       box-sizing: border-box;
@@ -612,10 +627,13 @@ button.swiper-pagination-bullet {
 
   .swiper-slide-image {
     width: 41.4%;
-    padding-right: 8.8%;
+    padding-right: 3%;
+    text-align: center;
+
 
     img {
       width: 255px;
+      margin-top: 70px;
     }
   }
 
@@ -626,6 +644,7 @@ button.swiper-pagination-bullet {
   .swiper-bottom-wrapper {
     min-height: 45px;
     align-items: flex-start;
+    padding-bottom: 0;
   }
 
   .swiper-pagination-bullet {
