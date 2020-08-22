@@ -157,7 +157,7 @@
     display: flex;
 
     .wrapper {
-      z-index: 6;
+      z-index: 20;
     }
   }
 
@@ -380,7 +380,7 @@
     }
 
     img {
-      height: 23px;
+      height: 16px;
     }
 
     img:first-child {
@@ -407,6 +407,7 @@
       flex-grow: 1;
       border: none;
       outline: none;
+      padding-left: 20px;
     }
 
     button {
@@ -576,7 +577,7 @@
   .main-header__form-output {
     min-height: 60px;
     background-color: #fff;
-    padding-left: 15px;
+    padding-left: 20px;
     border-bottom: 1px solid #ddd;
     display: flex;
     align-items: center;
@@ -585,7 +586,11 @@
 
 @media (min-width: 1500px) {
 
-
+  .main-header__logo {
+    img:last-child {
+      height: 23px;
+    }
+  }
 
 
   .main-header__shopping-cart-right-block {
