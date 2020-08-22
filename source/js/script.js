@@ -1,3 +1,6 @@
+
+'use strict';
+
 Swiper.use(myPlugin);
 
 let swiper = new Swiper('.swiper-container', {
@@ -12,13 +15,6 @@ let swiper = new Swiper('.swiper-container', {
 
   debugger: true,
 });
-
-let menuButton = document.querySelector('.main-header__menu');
-let headerMenu = document.querySelector('.main-header__list');
-
-menuButton.addEventListener('click', function() {
-  headerMenu.classList.toggle('visually-hidden');
-})
 
 let mailLinkButton = document.querySelector('.main-header__mail-link');
 let mailCopyButton = document.querySelector('.main-header__mail-copy');
@@ -141,4 +137,29 @@ tempTypesLink.addEventListener('mouseenter', function() {
   tempTypesLink.addEventListener('mouseleave', closeTempTypesMenu);
   equipmentList.style.boxShadow = "0px 9px 18px -12px #000";
   showSomeElement(tempTypesMenu);
+});
+
+let headerInput = document.querySelector('.main-header__form input[type="text"]');
+let headerForm = document.querySelector('.main-header__form');
+const PMMLIST = ['посудомоечная машина купольного типа МПК-700', 'посудомоечная машина купольного типа МПК-800', 'посудомоечная машина купольного типа МПК-900', 'посудомоечная машина купольного типа МПК-700К', 'посудомоечная машина купольного типа МПК-800К', 'посудомоечная машина купольного типа МПК-900К'];
+let outputCont = document.querySelector('.main-header__form-output');
+let newList = document.createElement('ul');
+newList.className = "main-header__output-wrapper";
+headerForm.prepend(newList);
+
+headerInput.addEventListener('input', function() {
+  let pmmMassL = document.querySelectorAll('.main-header__form-output');
+  for (let i = 0; i < pmmMassL.length; i++) {
+    let li = newList.firstElementChild;
+    newList.removeChild(li);
+  }
+
+  for (let i = 0; i < PMMLIST.length; i++) {
+    if (PMMLIST[i].startsWith(headerInput.value.toLowerCase()) && headerInput.value !== '') {
+      let newElem = document.createElement('li');
+      newElem.innerHTML = PMMLIST[i];
+      newElem.className = "main-header__form-output";
+      newList.append(newElem);
+    }
+  }
 });
